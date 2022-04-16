@@ -1,0 +1,8 @@
+#!/bin/bash
+
+pattern=$1
+path=$2
+
+f=$(fd "$@"| rofi -dmenu)
+
+xdg-open "$f" >/dev/null 2>&1

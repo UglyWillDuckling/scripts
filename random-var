@@ -21,7 +21,7 @@
 # File containing the words
 # Wordfile can be dict location on linux => /usr/share/dict
 # this assumes that the file is in the same location as the script
-WORDFILE=$(dirname $0)/files/words.txt
+WORDFILE=$(dirname "$0")/files/words.txt
 
 get_word() {
   local word
@@ -57,7 +57,7 @@ main() {
       s)
       echo "$word1""_""$word2"
           ;;
-      h) help
+      *) echo "$word1"
           ;;
     esac
   done

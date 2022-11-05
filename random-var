@@ -22,6 +22,7 @@
 # Wordfile can be dict location on linux => /usr/share/dict
 # this assumes that the file is in the same location as the script
 WORDFILE=$(dirname "$0")/files/words.txt
+WORDFILE=/usr/share/dict/american-english
 
 get_word() {
   local word

@@ -10,6 +10,7 @@ update_repos() {
 
   for dir in "${list_of_dirs[@]}"
   do
+    echo Updating "$dir"
     (cd "$dir" && update_repo)
   done
 }
